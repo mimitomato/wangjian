@@ -1,0 +1,47 @@
+@media screen and (max-width: 499px) {
+  html,
+  body {
+    font-size: 57.2px;
+  }
+}
+.gxy {
+  width: 100%;
+  font-size: 0;
+}
+.gxy > img {
+  width: 100%;
+}
+.gxy .gxy-item::-webkit-scrollbar {
+  display: none;
+}
+.gxy .gxy-item {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  background-color: #fafafa;
+}
+.gxy .gxy-item li {
+  width: 1.6rem;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+.gxy .gxy-item li img {
+  width: 100%;
+}
+.gxy .gxy-item li span {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0.1rem;
+  margin-top: 0.1rem;
+}
+.gxy .gxy-item li i {
+  width: 100%;
+  margin-top: 20px;
+}

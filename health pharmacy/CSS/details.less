@@ -1,0 +1,46 @@
+@media screen and (max-width:499px){
+    html,body{
+        font-size: 57.2px;
+    }
+}
+.gxy{
+    width: 100%;
+    font-size: 0;
+    > img{
+        width: 100%;
+    }
+    .gxy-item::-webkit-scrollbar{
+        display: none;
+    }
+    .gxy-item{
+        width: 100%;
+        overflow-x: auto;
+        display: flex;
+        background-color: #fafafa;
+        li{
+            width: 1.6rem;
+            padding: .2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #333;
+            img{
+                width: 100%; 
+            }
+            span{
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin-bottom: .1rem;
+                margin-top: .1rem;
+            }
+            i{
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+}

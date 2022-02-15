@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健客大药房-放心的网上药店，买正品药上健客</title>
+    <meta name="description" content="健客网手机版全新上线,包括中西药品、营养保健品、成人用品、时尚美妆用品等上万种商品等您挑选,执业医师24小时免费健康咨询,让您随时随地体验健客网的专业服务，买正品药上健客！">
+    <link rel="shortcut icon" sizes="48x48" href="https://m.jianke.com/public/favicon.ico">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="../../normalize.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-beta3-web/css/all.css">
+    <link rel="stylesheet" href="./CSS/BFC.css">
+    <link rel="stylesheet" href="./CSS/public.css">
+    <link rel="stylesheet" href="./CSS/shopping.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- 顶部 -->
+        <div class="top yc" >
+            <div class="top-background " id="tabBar"></div>
+            <div class="top-wrapper">
+                <div class="top-title">
+                    <span>健客</span>
+                </div>
+                <div class="top-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="💖补佳乐低至28.9">
+                </div>
+                <div class="login">
+                    <a href="./page/login.html">
+                        <span>登录</span>
+                    </a>
+                </div>
+            </div>      
+        </div>
+        <!-- 轮播图 -->
+        <div class="swapper yc"  >
+            <ul>
+                <li >
+                    <a href=""><img src="./img/img-index/66.jpg" alt="" class="ab"></a>
+                </li>
+                <li >
+                    <a href=""><img src="./img/img-index/55.jpg" alt="" class="ab"></a>
+                </li>
+                <li >
+                    <a href=""><img src="./img/img-index/71.jpg" alt="" class="ab"></a>
+                </li>
+                <li >
+                    <a href=""><img src="./img/img-index/35.png" alt="" class="ab"></a>
+                </li>
+                <li >
+                    <a href=""><img src="./img/img-index/33.jpg" alt="" class="ab"></a>
+                </li>
+                <li >
+                    <a href=""><img src="./img/img-index/34.jpg" alt="" class="ab"></a>
+                </li>
+                <li >
+                    <a href=""><img src="./img/img-index/17.jpg" alt="" class="ab"></a>
+                </li>
+            </ul>
+            <div class="swapper-dot">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <!-- 轮播图 -->
+        <script type="text/javascript"> 
+            var i = 0,len;
+            var listBox = document.getElementsByClassName("ab")    
+            len = listBox.length;  
+            var len2,k=0;
+            var listDot = document.getElementsByClassName("dot")    
+            len2 = listDot.length;      
+            function lunbotu(){              
+                i++;
+                if(i>=len) i=0;
+                for(let j=0 ; j<len ; j++)
+                {   
+                    listBox[j].style.display = 'none';
+                }     
+                listBox[i].style.display = 'block';  
+            }
+            function lunbotu2() { 
+                if(k>=len2) k=0;
+                listDot[k].style.backgroundColor = '#999';
+                if(k==0){
+                    listDot[k+len2-1].style.backgroundColor = '#e6e6e6';
+                }
+                else{
+                    listDot[k-1].style.backgroundColor = '#e6e6e6'; 
+                }    
+                k++;
+            }  
+            setInterval(lunbotu2, 2000);     
+            setInterval(lunbotu, 2000);     
+        </script>
+        <!-- 头部导航栏 -->
+        <ul  class="nav yc"  >
+            <li>
+                <a href="">
+                    <img src="./img/img-index/5.png" alt="">
+                    <span>购买咨询</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/img-index/67.png" alt="">
+                    <span>健康补贴</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/img-index/11.png" alt="">
+                    <span>按症找药</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/img-index/58.png" alt="">
+                    <span>肝病艾滋</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/img-index/62.gif" alt="">
+                    <span>男性</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/img-index/18.png" alt="">
+                    <span>女性</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/img-index/65.png" alt="">
+                    <span>心脑血管</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/img-index/70.gif" alt="">
+                    <span>神经用药</span>
+                </a>
+            </li>
+        </ul>
+        <!-- 健康头条 -->
+        <div class="jktt yc"  >
+            <div class="jktt-logo">
+                <img src="./img/img-index/74.png" alt="">
+            </div>
+            <ul class="jktt-article">
+                <li>
+                    <span>文章</span>              
+                    乙肝—肝硬化—肝癌，从乙肝到肝癌并不遥远
+                </li>
+                <li>
+                    <span>文章</span>                      
+                    蚊子包止痒法，到底哪招最有用？
+                </li>
+                <li>
+                    <span>文章</span>                        
+                    血管需要“排毒”？做好5件事情，别给血管添堵就行！
+                </li>
+            </ul>
+
+        </div>
+        <!-- 限时抢购 -->
+        <div class="limit-shopping clearfix yc"  >
+            <div class="limit-shopping-top">
+                <span class="limit-one">限时抢购</span>
+                <span class="limit-two">
+                    <label for="">今日专场</label>
+                    <span class="limit-time">
+                        <i id="_h">00</i>:
+                        <i id="_m">00</i>:
+                        <i id="_s">00</i>
+                    </span>
+                </span>
+                <span class="limit-three">抢购更多></span>
+            </div>
+            <div class="limit-shopping-content">
+                <ul>
+                    <li>
+                        <img src="./img/img-index/32.jpg" alt="">
+                        <span>白云山金戈</span>
+                        <i>￥208.00</i>
+                    </li>
+                    <li>
+                        <img src="./img/img-index/22.jpg" alt="">
+                        <span>爱廷玖</span>
+                        <i>￥69.00</i>
+                    </li>
+                    <li>
+                        <img src="./img/img-index/2.jpg" alt="">
+                        <span>必利劲</span>
+                        <i>￥273.00</i>
+                    </li>
+                    <li>
+                        <img src="./img/img-index/27.jpg" alt="">
+                        <span>艾时达</span>
+                        <i>￥29.00</i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 优时比正品  -->
+        <div class="ysb-img yc"  >
+            <img src="./img/img-index/57.jpg" alt="">
+        </div>
+        <!-- 频道分类 -->
+        <div class="img-title yc"  >
+            <img src="./img/img-index/26.png" alt="">
+        </div>
+        <div class="item-wrapper yc"  >
+            <div class="item">
+                <img src="./img/img-index/59.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/1.jpg" alt="">
+            </div>
+        </div>
+        <div class="item-wrapper yc" >
+            <div class="item">
+                <img src="./img/img-index/63.png" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/12.jpg" alt="">
+            </div>
+        </div>
+        <div class="item-wrapper yc" >
+            <div class="item">
+                <img src="./img/img-index/4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/73.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/14.jpg" alt="">
+            </div>
+        </div>
+        <div class="item-wrapper yc" >
+            <div class="item">
+                <img src="./img/img-index/30.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/16.jpg" alt="">
+            </div>
+            <div class="item">  
+                <img src="./img/img-index/20.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/13.jpg" alt="">
+            </div>
+        </div>
+        <div class="ysb-img yc" >
+            <img src="./img/img-index/37.jpg" alt="">
+        </div>
+        <!-- 精选活动 -->
+        <div class="img-title yc" >
+            <img src="./img/img-index/36.jpg" alt="">
+        </div>
+        <div class="item-wrapper yc" >
+            <div class="item">
+                <img src="./img/img-index/28.png" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/19.png" alt="">
+            </div>
+        </div>
+        <div class="item-wrapper yc" >
+            <div class="item">
+                <img src="./img/img-index/29.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/21.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/69.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/10.png" alt="">
+            </div>
+        </div>
+        <!-- 健康服务 -->
+        <div class="img-title yc" >
+            <img src="./img/img-index/38.jpg" alt="">
+        </div>
+        <div class="item-wrapper yc" >
+            <div class="item">
+                <img src="./img/img-index/24.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/68.jpg" alt="">
+            </div>
+        </div>
+        <div class="item-wrapper yc" >
+            <div class="item">
+                <img src="./img/img-index/15.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/72.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./img/img-index/60.jpg" alt="">
+            </div>
+        </div>
+        <div class="ysb-img yc" >
+            <img src="./img/img-index/9.jpg" alt="">
+        </div>
+        <!-- 好药推荐 -->
+        <div class="img-title yc"  >
+            <img src="./img/img-index/6.png" alt="">
+        </div>
+        <div class="item-wrapper hytj yc">
+            <div class="item">
+                <img src="./img/img-index/25.jpg" alt="">
+                <span>舒筋健腰丸OTC(白云山)</span>
+                <span class="item-span2">下单立送吲哚美辛巴布膏4贴</span>
+                <i>￥859.00</i>
+            </div>
+            <div class="item">
+                <img src="./img/img-index/39.jpg" alt="">
+                <span>【补钙大礼包】健力多R氨糖软骨素钙片中老年补钙补软骨护关节维骨保健品</span>
+                <span class="item-span2">双11提前购专享！</span>
+                <i>￥236.00</i>
+            </div>
+            <div class="item">
+                <img src="./img/img-index/48.jpg" alt="">
+                <span>同仁堂 五子衍宗丸(水蜜丸)  60g</span>
+                <span class="item-span2">6盒一疗程，搭配六位地黄丸效果更佳</span>
+                <i>24.00</i>
+            </div>
+            <div class="item">
+                <img src="./img/img-index/53.jpg" alt="">
+                <span>舒尔佳 奥利司他胶囊 21粒装</span>
+                <span class="item-span2"></span>
+                <i>￥859.00</i>
+            </div>
+            <div class="item">
+                <img src="./img/img-index/25.jpg" alt="">
+                <span>舒筋健腰丸OTC(白云山)</span>
+                <span class="item-span2">下单立送吲哚美辛巴布膏4贴</span>
+                <i>￥859.00</i>
+            </div>
+            <div class="item">
+                <img src="./img/img-index/39.jpg" alt="">
+                <span>【补钙大礼包】健力多R氨糖软骨素钙片中老年补钙补软骨护关节维骨保健品</span>
+                <span class="item-span2">双11提前购专享！</span>
+                <i>￥236.00</i>
+            </div>
+            <div class="item">
+                <img src="./img/img-index/48.jpg" alt="">
+                <span>同仁堂 五子衍宗丸(水蜜丸)  60g</span>
+                <span class="item-span2">6盒一疗程，搭配六位地黄丸效果更佳</span>
+                <i>24.00</i>
+            </div>
+            <div class="item">
+                <img src="./img/img-index/53.jpg" alt="">
+                <span>舒尔佳 奥利司他胶囊 21粒装</span>
+                <span class="item-span2"></span>
+                <i>￥859.00</i>
+            </div>
+        </div>
+        <div class="ysb-img yc" >
+            <img src="./img/img-index/23.png" alt="">
+        </div>
+        <!-- 开发者 -->
+        <div class="apply-container yc" >
+            <p>开发者：广州方舟医药有限公司 | 应用权限 | 隐私政策</p>
+            <p>健客网上药店  |  应用版本：5.15.1  |  更新时间：2021/8/12</p>
+        </div>
+    </div>
+    <!-- 购物车 -->
+    <div class="shopping-cart-wrapper" id="show">
+        <div class="shopping-cart-top">
+            <a href="">
+                <span><</span>
+            </a>
+            <span>购物车</span>
+        </div>
+        <div class="cart-login">
+            <span>登录后将保存购物车商品</span>
+            <a href="./page/login.html">
+                <span>登录</span>
+            </a>
+        </div>
+        <div class="content">
+            <img src="./img/img-index/shopping-cart.png" alt="">
+            <p>购物车空空如也，感觉不会再爱了ㄟ( ▔, ▔ )ㄏ</p>
+            <a href="">随便逛逛</a>
+        </div>
+
+    </div>
+    <!-- 分类 -->
+    <div class="classify shopping-cart-wrapper" id="classifyShow">
+        <div class="shopping-cart-top" style="position: relative;;z-index: 100;">
+            <a href="">
+                <span><</span>
+            </a>
+            <span>全部分类</span>
+            <span class="ddd">· · ·</span>
+        </div>
+        <div class="search">
+            <div class="top-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="💖补佳乐低至28.9">
+            </div>   
+            <div class="search-btn">
+                搜索
+            </div>     
+        </div>
+        <div class="classify-item">
+            <div class="classify-left">
+                <ul>
+                    <li id="diandian" onclick="dian2Class();">男科用药
+                        <div class="classify-right">
+                            <div class="list-wrapper">
+                                <div class="lists">
+                                    <a href="./page/details.html">
+                                        <img src="./img/details-img/classify1.jpg" alt="">
+                                    </a>                            
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify2.jpg" alt="">
+                                    <span>滋阴补肾</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify2.jpg" alt="">
+                                    <span>滋阴补肾</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify2.jpg" alt="">
+                                    <span>滋阴补肾</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify2.jpg" alt="">
+                                    <span>滋阴补肾</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify2.jpg" alt="">
+                                    <span>滋阴补肾</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify2.jpg" alt="">
+                                    <span>滋阴补肾</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify2.jpg" alt="">
+                                    <span>滋阴补肾</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify2.jpg" alt="">
+                                    <span>滋阴补肾</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify2.jpg" alt="">
+                                    <span>滋阴补肾</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify2.jpg" alt="">
+                                    <span>滋阴补肾</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify2.jpg" alt="">
+                                    <span>滋阴补肾</span>  
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </li>
+                    <li onclick="dianClass();">心血管科
+                        <div class="classify-right">
+                            <div class="list-wrapper">
+                                <div class="lists">
+                                    <a href="./page/details.html" >
+                                      <img src="./img/details-img/classtify4.jpg" alt="">
+                                    </a>                      
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </li>
+                    <li onclick="dianClass();return false;">神经系统</li>
+                    <li onclick="dianClass();return false;">肝胆科药
+                        <div class="classify-right">
+                            <div class="list-wrapper">
+                                <div class="lists">
+                                    <img src="./img/details-img/classtify4.jpg" alt="">
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </li>
+                    <li onclick="dianClass();return false;">风湿科药</li>
+                    <li onclick="dianClass();return false;">风湿骨科
+                        <div class="classify-right">
+                            <div class="list-wrapper">
+                                <div class="lists">
+                                    <img src="./img/details-img/classtify4.jpg" alt="">
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                            </div>
+                           
+                        </div></li>
+                    <li onclick="dianClass();return false;">消化系统</li>
+                    <li onclick="dianClass();return false;">呼吸系统
+                        <div class="classify-right">
+                            <div class="list-wrapper">
+                                <div class="lists">
+                                    <img src="./img/details-img/classtify4.jpg" alt="">
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                            </div>
+                           
+                        </div></li>
+                    <li onclick="dianClass();return false;">皮肤科药</li>
+                    <li onclick="dianClass();return false;">滋补保健
+                        <div class="classify-right">
+                            <div class="list-wrapper">
+                                <div class="lists">
+                                    <img src="./img/details-img/classtify4.jpg" alt="">
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                            </div>
+                           
+                        </div></li>
+                    <li onclick="dianClass();return false;">风湿骨科</li>
+                    <li onclick="dianClass();return false;">消化系统
+                        <div class="classify-right">
+                            <div class="list-wrapper">
+                                <div class="lists">
+                                    <img src="./img/details-img/classtify4.jpg" alt="">
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                            </div>
+                           
+                        </div></li>
+                    <li onclick="dianClass();return false;">呼吸系统</li>
+                    <li onclick="dianClass();return false;">皮肤科药
+                        <div class="classify-right">
+                            <div class="list-wrapper">
+                                <div class="lists">
+                                    <img src="./img/details-img/classtify4.jpg" alt="">
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                                <div class="list">
+                                    <img src="./img/details-img/classify3.jpg" alt="">
+                                    <span>高血压</span>  
+                                </div>
+                            </div>
+                           
+                        </div></li>
+                    <li onclick="dianClass();return false;">滋补保健</li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            function  dianClass() {
+                document.getElementById('diandian').style.backgroundColor = "#f0f0f0"
+                document.getElementById('diandian').style.color = "#000"
+            }
+            function  dian2Class() {
+                document.getElementById('diandian').style.backgroundColor = "#fff"
+                document.getElementById('diandian').style.color = "#1b8ffa"
+            }
+        </script>
+    </div>
+
+    <ul class="bottom-nav">
+        <li id="indexColor"  onclick="index();return false;">
+            <i class="fa-solid fa-house"></i>
+            <span>首页</span>
+        </li>
+        <li id="classifyShowColor" onclick="classify();return false;">
+            <i class="fa-solid fa-landmark"></i>
+            <span>分类</span>
+        </li> <li>
+            <i class="fa-brands fa-hotjar"></i>
+            <span>头条</span>
+        </li> 
+        <li id="shoppingColor"  onclick="shoppingCart();return false;">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>购物车</span>
+        </li> 
+        <li>
+            <i class="fa-solid fa-user"></i>
+            <span>我</span>
+        </li>
+    </ul>
+    <!-- 监听页面若向下滑动则显示顶部背景图 -->
+    <script>
+        window.addEventListener('scroll', divScrollEv, true);
+        // document.querySelector('body').addEventListener('scroll', divScrollEv, true);
+        const tabBar2 = document.getElementById('tabBar')
+        function divScrollEv() {
+          var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+          if ( (scrollTop) == 0) {
+              tabBar2.style.display = 'none';
+          }
+          else{
+              tabBar2.style.display = 'block'; 
+          }
+        }
+    </script>
+
+ 
+</body>
+</html>
