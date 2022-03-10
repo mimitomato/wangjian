@@ -1,0 +1,278 @@
+.explore {
+  width: 100%;
+  height: 585px;
+  display: flex;
+  justify-content: space-between;
+}
+.explore .explore-nav {
+  display: flex;
+  flex: 1 0 250px;
+  background-color: #0f0f0f;
+  height: 100%;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background-image: url(../images/PC-img/stars.png);
+  background-position: left bottom;
+  background-size: 250px;
+  background-repeat: no-repeat;
+}
+.explore .explore-nav ul {
+  height: 100%;
+  padding: 95px 77px 0px 55px;
+}
+.explore .explore-nav ul li {
+  position: relative;
+  color: #767676;
+  font-size: 16px;
+  width: 146px;
+  height: 36px;
+  cursor: pointer;
+}
+.explore .explore-nav ul li img {
+  position: absolute;
+  left: -30px;
+  top: 7px;
+  display: none;
+}
+.explore .explore-nav ul li span {
+  white-space: nowrap;
+}
+.explore .explore-nav ul li:last-child {
+  padding-top: 50px;
+}
+.explore .explore-nav ul li:last-child img:first-child {
+  top: 50px;
+}
+.explore .explore-nav ul li:last-child img:last-child {
+  display: block;
+  position: static;
+  width: 84px;
+  height: 14px;
+}
+.explore .explore-nav ul li:first-child {
+  color: #fff;
+}
+.explore .explore-nav ul li:first-child img {
+  display: block;
+}
+.explore .template {
+  position: relative;
+  width: 100%;
+  height: 585px;
+  background-color: #111;
+  overflow: hidden;
+  cursor: pointer;
+}
+.explore .template .temp {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.explore .template .tp-one {
+  display: block;
+}
+.explore .template .tp-one a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.explore .template .tp-one a .ml-bg-image {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  transition: none;
+}
+.explore .template .tp-one a .ml-word {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 33%;
+  height: 50%;
+}
+.explore .template .tp-one a .ml-car {
+  bottom: 9px;
+  left: 18px;
+  width: 67.3%;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+.explore .template .tp-one a .ml-word-hover {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 33%;
+  height: 50%;
+}
+.explore .template .tp-one .temp-left {
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+.explore .template .tp-one .temp-left .temp-s {
+  width: 100%;
+  height: 60%;
+}
+.explore .template .tp-one .temp-left .temp-s a {
+  background-color: #f4f4f4;
+}
+.explore .template .tp-one .temp-left .temp-s a .ml-bg-image {
+  background-image: url(../images/PC-img/explore-img/s_mouseover.jpg);
+}
+.explore .template .tp-one .temp-left .temp-e {
+  width: 100%;
+  height: 40%;
+}
+.explore .template .tp-one .temp-left .temp-e a {
+  background-color: #8b8c8c;
+}
+.explore .template .tp-one .temp-left .temp-e a .ml-bg-image {
+  background-image: url(../images/PC-img/explore-img/e_mouseover.jpg);
+}
+.explore .template .tp-one .temp-right {
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+.explore .template .tp-one .temp-right .temp-top-c {
+  width: 100%;
+  height: 50%;
+}
+.explore .template .tp-one .temp-right .temp-top-c a {
+  background-color: #727375;
+}
+.explore .template .tp-one .temp-right .temp-btm {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.explore .template .tp-one .temp-right .temp-btm .temp-b {
+  width: 50%;
+  height: 100%;
+}
+.explore .template .tp-one .temp-right .temp-btm .temp-b a {
+  background-color: #c1c1c0;
+}
+.explore .template .tp-one .temp-right .temp-btm .temp-b a .ml-bg-image {
+  background-image: url(../images/PC-img/explore-img/Background-5.jpg);
+}
+.explore .template .tp-one .temp-right .temp-btm .temp-b a .ml-word,
+.explore .template .tp-one .temp-right .temp-btm .temp-b a .ml-word-hover {
+  right: 65%;
+  width: 35%;
+  height: 35%;
+}
+.explore .template .tp-one .temp-right .temp-btm .temp-b a .ml-car {
+  width: 55%;
+  left: 25%;
+}
+.explore .template .tp-one .temp-right .temp-btm .temp-a {
+  width: 50%;
+  height: 100%;
+}
+.explore .template .tp-one .temp-right .temp-btm .temp-a a {
+  background-color: #a6a6a6;
+}
+.explore .template .tp-one .temp-right .temp-btm .temp-a a .ml-bg-image {
+  background-image: url(../images/PC-img/explore-img/a35-modellist.jpg);
+}
+.explore .template .tp-one .temp-right .temp-btm .temp-a a .ml-word,
+.explore .template .tp-one .temp-right .temp-btm .temp-a a .ml-word-hover {
+  right: 65%;
+  width: 35%;
+  height: 35%;
+}
+.explore .template .tp-one .temp-right .temp-btm .temp-a a .ml-car {
+  width: 80%;
+}
+.explore .template .tp-one a:hover .ml-car,
+.explore .template .tp-one a:hover .ml-word {
+  display: none;
+}
+.explore .template .tp-one a:hover .ml-word-hover,
+.explore .template .tp-one a:hover .ml-bg-image {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.explore .template .tp-one a:hover {
+  background-color: #666 !important;
+}
+.explore .content-six {
+  height: 106px;
+  width: 100%;
+  color: white;
+}
+.aside-bar .aside-hid {
+  right: 17px;
+}
+.aside-bar .aside-hid span {
+  opacity: 0;
+  transition: all 0.2s 0.2s;
+  visibility: hidden;
+}
+.aside-bar .aside-hid li:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+#wrapper {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+#imgWrap,
+#imgWrap2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: move;
+}
+#VV {
+  width: 100%;
+  height: 100%;
+}
+#sec,
+#sec2 {
+  z-index: 999;
+  position: absolute;
+  width: 136px;
+  height: 136px;
+  background-color: orange;
+  opacity: 0.25;
+  display: none;
+}
+#oBig,
+#oBig2 {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #eee;
+  box-shadow: 2px 2px 2px #808080;
+  overflow: hidden;
+}
+#oBig img,
+#oBig2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600%;
+  height: 600%;
+}

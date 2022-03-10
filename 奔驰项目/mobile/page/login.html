@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/public.css">
+    <style>
+        html,body{
+            font-size: 53.47px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 登录页面制作 -->
+    <div class="app">
+        <div class="login">
+            <!-- 标题图片Mercedes -->
+            <div class="login-img">
+                <img src="../images/login-img/img1.png" alt="">
+                <img src="../images/login-img/wenhao.png" alt="">
+            </div>
+            <!-- 标题选择手机密码登录 -->
+            <div class="login-title">
+                <div class="select-tel">
+                    <span>手机快捷登录</span>
+                    <i class="triangular"></i>
+                </div>
+                <div class="select-password">
+                    <span>密码登录</span>
+                    <i class="triangular2"></i>
+                </div>
+            </div>
+            <!-- 手机输入框 -->
+            <div class="infor-tel">
+                <div class="tel">
+                    <input type="tel" placeholder="手机号码">
+                </div>
+                <div class="code">
+                    <input type="text" placeholder="验证码">
+                    <a href="" class="send-code">发送验证码</a>
+                </div>
+                <button class="infor-tel-btn">
+                    <a href="../index.html" style="display: inline-block;color: #fff;width: 100%;height: 100%;">登录</a>
+                </button>
+            </div>
+            <!-- 密码登录 -->
+            <div class="infor-tel infor-password">
+                <div class="tel">
+                    <input type="tel" placeholder="手机号码/邮箱地址/用户名">
+                </div>
+                <div class="code">
+                    <input type="text" placeholder="登录密码">
+                    <a href="" class="send-code">找回密码</a>
+                </div>
+                <button class="infor-tel-btn">登录</button>
+            </div>
+            <!-- 创建您的Mercedes ID -->
+            <div class="register">
+                <span class="register-span">创建您的Mercedes me ID</span>
+            </div>
+            <!-- QQ微信图片 -->
+            <div class="login-footer">
+                <img src="../images/login-img/QQ.png" alt="">
+                <img src="../images/login-img/WX.png" alt="">
+            </div>
+        </div>
+        <!-- 注册 -->
+        <div class="create-id login">
+            <div class="login-img">
+                <img src="../images/login-img/create-id.png" alt="">
+                <img src="../images/login-img/wenhao.png" alt="">
+            </div>
+            <div class="infor-tel">
+                <div class="tel">
+                    <input type="text" placeholder="您的姓氏">
+                </div>
+                <div class="tel">
+                    <input type="name" placeholder="您的名字">
+                </div>
+                <div class="tel">
+                    <input type="tel" placeholder="手机号码">
+                </div>
+                <div class="code">
+                    <input type="code" placeholder="验证码">
+                    <a href="" class="send-code">发送验证码</a>
+                </div>
+                <div class="reading">
+                    <input type="checkbox">
+                    <span>我已阅读并同意
+                        <i>服务协议</i>和
+                        <i>隐私条款</i>
+                    </span>
+                </div>
+                <button class="infor-tel-btn">注册</button>
+            </div>
+              <!-- 创建您的Mercedes ID -->
+            <div class="register" style="color: #666;">
+                <span>创建您的Mercedes me ID， </span>
+                <a href="javascript:;" style="color: #00adef;" class="create-login">立即登录</a>
+            </div>
+        </div>
+    </div>
+    <!-- 选择手机密码跳转 -->
+    <script>
+        var tel = document.querySelector('.select-tel')
+        var password = document.querySelector('.select-password')
+        var triangular1 = document.querySelector('.triangular')
+        var triangular2 = document.querySelector('.triangular2')
+        var infor_tel = document.querySelector('.infor-tel')
+        var infor_password = document.querySelector('.infor-password')
+        tel.onclick = function(){
+            infor_tel.style.display = 'block'
+            infor_password.style.display = 'none'
+            tel.style.borderBottom = '1px solid #00adef'
+            password.style.borderBottom = '0'
+            triangular1.style.display = 'block'
+            triangular2.style.display = 'none'
+            tel.style.color = '#00adef'
+            password.style.color = '#666'
+        }
+        password.onclick = function(){
+            infor_tel.style.display = 'none'
+            infor_password.style.display = 'block'
+            tel.style.borderBottom = '0'
+            password.style.borderBottom = '1px solid #00adef'
+            triangular1.style.display = 'none'
+            triangular2.style.display = 'block'
+            tel.style.color = '#666'
+            password.style.color = '#00adef'
+        }    
+   
+   </script>
+   <!-- 跳转注册界面 -->
+   <script>
+        var register = document.querySelector('.register-span')
+        var login = document.querySelector('.login')
+        var createId = document.querySelector('.create-id')
+        var create_login = document.querySelector('.create-login')
+        register.onclick =function(){
+            login.style.display = 'none'
+            createId.style.display = 'block'
+        }
+        create_login.onclick = function() {
+            login.style.display = 'block'
+            createId.style.display = 'none'
+        }
+   </script>
+</body>
+</html>

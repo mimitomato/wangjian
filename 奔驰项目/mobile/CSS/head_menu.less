@@ -1,0 +1,72 @@
+// 主页顶部菜单栏
+.head-menu-wrap{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.head-menu{
+    position: absolute;
+    top: 0;
+    z-index: 102;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+      // 菜单栏左侧
+    .menu-left{
+        width: 124px;
+        background-color: black;
+        padding-top: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li{
+            width: 100%;
+            padding: 32px 0;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    // 菜单栏右侧
+    .menu-right{
+        position: relative;
+        width: 100%;
+        background-color: #fff;
+        .login{
+            width: 100%;
+            display: flex;
+            padding: 32px 20px 16px 32px;
+            justify-content: space-between;
+            font-size: 16px;
+            .login-left{
+                a{
+                    color: #333;
+                }
+            }
+            .login-right{
+                display: flex;
+                img{
+                    margin-left: 32px;
+                    width: 15px;
+                    height: 21px;
+                }
+            }
+        }
+        .menu-content{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 32px;
+            padding-right: 20px;
+            padding-top: 28px;
+            visibility: hidden;
+            li{
+                padding: 24px 0;
+            }
+        }
+        .menu-content:first-of-type{
+            visibility: visible;
+        }
+    }
+}

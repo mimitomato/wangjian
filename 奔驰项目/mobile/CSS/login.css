@@ -1,0 +1,180 @@
+.app {
+  width: 100%;
+  height: 100%;
+}
+.app .login {
+  padding: 18.5% 5.5% 0 5.5%;
+  height: 100%;
+  position: relative;
+}
+.app .login .login-img {
+  position: relative;
+  height: 7.5%;
+  padding-left: 3.3%;
+}
+.app .login .login-img img:first-child {
+  position: absolute;
+  width: 50%;
+  vertical-align: middle;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: 0 auto;
+}
+.app .login .login-img img:last-child {
+  position: absolute;
+  width: 5%;
+  right: 20%;
+  top: -20%;
+}
+.app .login .login-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 29.2px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+.app .login .login-title .select-tel {
+  position: relative;
+  width: 50%;
+  padding-bottom: 3.82%;
+  border-bottom: 1px solid #00adef;
+  color: #00adef;
+}
+.app .login .login-title i {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -14px;
+  border-top: 7px solid #00b7ff;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+.app .login .login-title .triangular2 {
+  display: none;
+}
+.app .login .login-title .select-password {
+  position: relative;
+  width: 50%;
+  padding-bottom: 3.82%;
+}
+.app .login .infor-tel {
+  width: 100%;
+  margin-top: 0.7rem;
+}
+.app .login .infor-tel .tel {
+  width: 100%;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.45rem;
+  border-bottom: 0.01rem solid #e1e1e1;
+  height: 0.718rem;
+  position: relative;
+}
+.app .login .infor-tel .code {
+  width: 100%;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.01rem solid #e1e1e1;
+  height: 0.718rem;
+  position: relative;
+}
+.app .login .infor-tel .code .send-code {
+  position: absolute;
+  right: 0;
+  color: #00adef;
+  font-size: 0.28rem;
+}
+.app .login .infor-tel input {
+  position: absolute;
+  width: 100%;
+  font-size: 0.28rem;
+  height: 0.4rem;
+  outline: none;
+  border: 0;
+}
+.app .login .infor-tel button {
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.26rem;
+  margin: 0.19rem 0;
+  background: #00adef;
+  color: #fff;
+  border: 0;
+}
+.app .login .infor-password {
+  display: none;
+}
+.app .login .register {
+  color: #00adef;
+  height: 0.5rem;
+  font-size: 0.28rem;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+.app .login .login-footer {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1.28rem;
+  font-size: 0.28rem;
+  text-align: center;
+  color: #666;
+}
+.app .login .login-footer img {
+  width: 0.6rem;
+}
+.app .login .login-footer img:first-child {
+  margin-right: 0.82rem;
+}
+.app .create-id {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.app .create-id .login-img img:first-child {
+  width: 5.22rem;
+  height: 0.66rem;
+}
+.app .create-id .login-img img:last-child {
+  right: 20px;
+}
+.app .create-id .reading {
+  width: 100%;
+  height: 20px;
+  font-size: 16px;
+  margin-top: 0.21rem;
+  color: #666;
+}
+.app .create-id .reading input {
+  float: left;
+  position: static;
+  width: 0.3rem;
+  height: 0.3rem;
+  border: 0.01rem solid #ccc;
+  margin-right: 0.24rem;
+  vertical-align: middle;
+  outline: none;
+  opacity: 0.5;
+  margin-top: 2px;
+}
+.app .create-id .reading span {
+  float: left;
+}
+.app .create-id .reading span i {
+  color: #00adef;
+  margin: 0 0.24rem;
+  font-style: normal;
+}
+::placeholder {
+  color: #aaaaaa;
+}

@@ -1,0 +1,280 @@
+// 点击探索
+.explore{
+    width: 100%;
+    height: 585px;
+    display: flex;
+    justify-content: space-between;
+    .explore-nav{
+        display: flex;
+        flex: 1 0 250px;
+        background-color: #0f0f0f;
+        height: 100%;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        background-image: url(../images/PC-img/stars.png);
+        background-position: left bottom;
+        background-size: 250px;
+        background-repeat: no-repeat;
+        ul{
+            height: 100%;
+            padding: 95px 77px 0px 55px;
+            li{
+                position: relative;
+                color: #767676;
+                font-size: 16px;   
+                width: 146px;
+                height: 36px;
+                cursor: pointer;
+                img{
+                    position: absolute;
+                    left: -30px;
+                    top: 7px;
+                    display: none;
+                }
+                span{
+                    white-space: nowrap;
+                }
+            }
+            li:last-child{   
+                padding-top: 50px;
+                img:first-child{
+                    top: 50px;
+                }
+                img:last-child{
+                    display: block;
+                    position: static;
+                    width: 84px;
+                    height: 14px;
+                }
+            }
+            li:first-child{
+                color: #fff;
+                img{
+                    display: block;
+                }
+            }
+        }
+    }
+    // ABCDE图片
+    .template{
+        position: relative;
+        width: 100%;
+        height: 585px;
+        background-color: #111;
+        overflow: hidden;
+        cursor: pointer;
+        // 轿车
+        .temp{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .tp-one{     
+            display: block;
+            // 公共部分       
+            a{ 
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                transition: all .5s ease-in-out;
+                .ml-bg-image{
+                    opacity: 0;
+                    visibility: hidden;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                    transition: none;
+                }
+                .ml-word{
+                    position: absolute;
+                    top: 25px;
+                    right: 25px;
+                    width: 33%;
+                    height: 50%;                    
+                }
+                .ml-car{
+                    bottom: 9px;
+                    left: 18px;
+                    width: 67.3%;
+                    position: absolute;
+                    transition: opacity .5s ease-in-out;
+                }
+                .ml-word-hover{
+                    display: none;
+                    position: absolute;
+                    top: 25px;
+                    right: 25px;
+                    width: 33%;
+                    height: 50%;   
+                }
+            }
+            .temp-left{
+                float: left;
+                width: 40%;
+                height: 100%;
+                .temp-s{
+                    width: 100%;
+                    height: 60%;
+                    a{
+                        background-color: #f4f4f4;
+                        .ml-bg-image{
+                            background-image: url(../images/PC-img/explore-img/s_mouseover.jpg);                 
+                        }
+                    }
+                }
+                .temp-e{
+                    width: 100%;
+                    height: 40%;
+                    a{
+                        background-color: #8b8c8c;
+                        .ml-bg-image{
+                            background-image: url(../images/PC-img/explore-img/e_mouseover.jpg);                 
+                        }
+                    }
+                }
+            }
+            .temp-right{
+                float: left;
+                width: 60%;
+                height: 100%;
+                .temp-top-c{
+                    width: 100%;
+                    height: 50%;
+                    a{
+                        background-color: #727375;
+                    }
+                }
+                .temp-btm{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    .temp-b{
+                        width: 50%;
+                        height: 100%;
+                        a{
+                            background-color: #c1c1c0;
+                            .ml-bg-image{
+                                background-image: url(../images/PC-img/explore-img/Background-5.jpg);
+                            }
+                            .ml-word,.ml-word-hover{
+                                right: 65%;
+                                width: 35%;
+                                height: 35%;
+                            }
+                            .ml-car{
+                                width: 55%;
+                                left: 25%;
+                            }
+                        }
+                    }
+                    .temp-a{
+                        width: 50%;
+                        height: 100%;
+                        a{
+                            background-color: #a6a6a6;
+                            .ml-bg-image{
+                                background-image: url(../images/PC-img/explore-img/a35-modellist.jpg);
+                            }
+                            .ml-word,.ml-word-hover{
+                                right: 65%;
+                                width: 35%;
+                                height: 35%;
+                            }
+                            .ml-car{
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+            // 鼠标移入
+            a:hover .ml-car,a:hover .ml-word{
+                display: none;
+            }
+            a:hover .ml-word-hover,a:hover .ml-bg-image{
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+            a:hover{
+                background-color: #666 !important;
+            }
+        }
+    }   
+
+    // 第六页尾部
+    .content-six{
+        height: 106px;
+        width: 100%;
+        color: white;
+    }
+}
+.aside-bar{
+    .aside-hid{
+        right: 17px;
+        span{
+            opacity: 0;
+            transition: all .2s .2s;
+            visibility: hidden;
+        }
+        li:hover span{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+// 图片放大
+#wrapper{
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+#imgWrap,#imgWrap2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: move;
+}
+#VV{
+    width: 100%;
+    height: 100%;
+}
+#sec,#sec2{
+    z-index: 999;
+    position: absolute;
+    width: 136px;
+    height: 136px;
+    background-color: orange;
+    opacity: 0.25;
+    display: none;
+}
+#oBig,#oBig2{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eee;
+    box-shadow: 2px 2px 2px #808080;
+    overflow: hidden;
+}
+#oBig img,#oBig2 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+    height: 600%;
+}

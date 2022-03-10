@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/public.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../../fontawesome-free-6.0.0-beta3-web/css/all.css">
+    <script src="../../jquery_1.11.1.js"></script>
+    <style>
+        html,
+        body {
+            font-size: 53.47px;
+            overflow: visible;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .head-container {
+            position: static;
+        }
+
+        input::-ms-reveal {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="head-container">
+        <div class="head">
+            <div class="head-left">
+                <a href="../index.html">
+                    <img src="../images/PC-img/logo-pc.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 验证提示 -->
+    <div class="prop">
+        <p class="prop-in"></p>
+    </div>
+    <!-- 登录页面制作 -->
+    <div class="app">
+        <div class="login">
+            <!-- 标题图片Mercedes -->
+            <div class="login-img">
+                <img src="../images/login-img/img1.png" alt="">
+                <img src="../images/login-img/wenhao.png" alt="">
+            </div>
+            <!-- 标题选择手机密码登录 -->
+            <div class="login-title">
+                <div class="select-tel">
+                    <span>手机快捷登录</span>
+                    <i class="triangular"></i>
+                </div>
+                <div class="select-password">
+                    <span>密码登录</span>
+                    <i class="triangular2"></i>
+                </div>
+            </div>
+            <!-- 手机输入框 -->
+            <div class="infor-tel">
+                <div class="tel">
+                    <input type="tel" placeholder="手机号码" class="kj-tel">
+                </div>
+                <div class="code">
+                    <input type="text" placeholder="验证码" class="inp">
+                    <a href="javascript:;" class="send-code">发送验证码</a>
+                </div>
+                <button class="infor-tel-btn">登录</button>
+            </div>
+            <!-- 密码登录 -->
+            <div class="infor-tel infor-password">
+                <div class="tel">
+                    <input type="tel" placeholder="手机号码/邮箱地址/用户名" class="login-tel">
+                </div>
+                <div class="code">
+                    <input type="password" placeholder="登录密码" class="login-pas">
+                    <a href="" class="find-password">找回密码</a>
+                </div>
+                <button class="infor-tel-btn">登录</button>
+            </div>
+            <!-- 创建您的Mercedes ID -->
+            <div class="register">
+                <span class="register-span">创建您的Mercedes me ID</span>
+            </div>
+            <!-- QQ微信图片 -->
+            <div class="login-footer">
+                <img src="../images/login-img/QQ.png" alt="">
+                <img src="../images/login-img/WB.png" alt="">
+                <img src="../images/login-img/WX.png" alt="">
+            </div>
+        </div>
+        <!-- 注册 -->
+        <div class="create-id login">
+            <div class="login-img">
+                <img src="../images/login-img/create-id.png" alt="">
+                <img src="../images/login-img/wenhao.png" alt="">
+            </div>
+            <div class="infor-tel">
+                <div class="tel">
+                    <input type="name" placeholder="您的姓名" class="inp-x">
+                </div>
+                <div class="tel">
+                    <input type="tel" placeholder="手机号码" class="inp-tel">
+                </div>
+                <div class="tel">
+                    <input type="password" placeholder="您的密码" class="inp-m">
+                    <i class="fa-solid fa-eye-slash eyes"></i>
+                    <i class="fa-solid fa-eye eyes"></i>
+                </div>
+                <div class="code">
+                    <input type="code" placeholder="验证码" class="inp">
+                    <a href="javascript:;" class="send-code">发送验证码</a>
+                </div>
+                <div class="reading">
+                    <input type="checkbox" class="yz-check">
+                    <span>我已阅读并同意
+                        <i>服务协议</i>和
+                        <i>隐私条款</i>
+                    </span>
+                </div>
+                <button class="infor-tel-btn">注册</button>
+            </div>
+            <!-- 创建您的Mercedes ID -->
+            <div class="register" style="color: #666;">
+                <span>创建您的Mercedes me ID， </span>
+                <a href="javascript:;" style="color: #00adef;" class="create-login">立即登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <section class="footer">
+            <div class="footer-links">
+                <ul>
+                    <li>
+                        <span>隐私条款</span>
+                    </li>
+                    <li class="shu">
+                    </li>
+                    <li>
+                        <span>客户关怀热线</span>
+                    </li>
+                    <li class="shu">
+                    </li>
+                    <li>
+                        <span>网站地图</span>
+                    </li>
+                    <li class="shu">
+                    </li>
+                    <li>
+                        <span>法律声明</span>
+                    </li>
+                    <li>
+                        <span>环保信息查询</span>
+                    </li>
+                    <li class="shu">
+                    </li>
+                    <li>
+                        <span>供应商平台</span>
+                    </li>
+                    <li class="shu">
+                    </li>
+                    <li>
+                        <span>腾势官网</span>
+                    </li>
+                    <li>
+                        <span>©梅赛德斯-奔驰版权所有</span>
+                    </li>
+                    <li style="margin: 0 30px;">
+                        <span>京ICP备09046804号-2</span>
+                    </li>
+                    <li>
+                        <span>京公网安备 11010502035702号 </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li>
+                        <div class="img-wrap">
+                            <img src="../images/index_img/d-logo.png" alt="">
+                        </div>
+                        <span>官方在线展厅</span>
+                    </li>
+                    <li>
+                        <div class="img-wrap">
+                            <img src="../images/index_img/d-logo.png" alt="">
+                        </div>
+                        <span>官方应用</span>
+                    </li>
+                    <li>
+                        <div class="img-wrap">
+                            <img src="../images/index_img/d-wb.png" alt="">
+                        </div>
+                        <span>官方微信</span>
+                    </li>
+                    <li>
+                        <div class="img-wrap">
+                            <img src="../images/index_img/d-tianmao-logo.png" alt="">
+                        </div>
+                        <span>天猫官方旗舰店</span>
+                    </li>
+                    <li>
+                        <div class="img-wrap">
+                            <img src="../images/index_img/d-wb.png" alt="">
+                        </div>
+                        <span>官方微博</span>
+                    </li>
+                    <li>
+                        <div class="img-wrap">
+                            <img src="../images/index_img/d-douyin.png" alt="">
+                        </div>
+                        <span>官方抖音</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!-- 选择手机密码跳转 -->
+    <script>
+        var tel = document.querySelector('.select-tel')
+        var password = document.querySelector('.select-password')
+        var triangular1 = document.querySelector('.triangular')
+        var triangular2 = document.querySelector('.triangular2')
+        var infor_tel = document.querySelector('.infor-tel')
+        var infor_password = document.querySelector('.infor-password')
+        tel.onclick = function () {
+            infor_tel.style.display = 'block'
+            infor_password.style.display = 'none'
+            tel.style.borderBottom = '1px solid #00adef'
+            password.style.borderBottom = '0'
+            triangular1.style.display = 'block'
+            triangular2.style.display = 'none'
+            tel.style.color = '#00adef'
+            password.style.color = '#666'
+        }
+        password.onclick = function () {
+            infor_tel.style.display = 'none'
+            infor_password.style.display = 'block'
+            tel.style.borderBottom = '0'
+            password.style.borderBottom = '1px solid #00adef'
+            triangular1.style.display = 'none'
+            triangular2.style.display = 'block'
+            tel.style.color = '#666'
+            password.style.color = '#00adef'
+        }
+
+    </script>
+    <!-- 跳转注册界面 -->
+    <script>
+        var register = document.querySelector('.register-span')
+        var login = document.querySelector('.login')
+        var createId = document.querySelector('.create-id')
+        var create_login = document.querySelector('.create-login')
+        register.onclick = function () {
+            login.style.display = 'none'
+            createId.style.display = 'block'
+        }
+        create_login.onclick = function () {
+            login.style.display = 'block'
+            createId.style.display = 'none'
+        }
+    </script>
+    <!-- 登录验证 -->
+    <script>
+        var sCode = document.querySelectorAll('.send-code')
+        var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+            'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+        var btn = document.querySelectorAll('.infor-tel-btn')   //获取登录注册按钮
+        var inp = document.querySelectorAll('.inp')    //获取验证码的value
+        // 随机四位数
+        function guessRandom(arr) {
+            let arr2 = []
+            for (let i = 0; i < 4; i++) {
+                arr2[i] = arr[Math.floor(Math.random() * (arr.length))]
+            }
+            return arr2.join('');
+        }
+        // 获取验证码
+        sCode[0].addEventListener('click', getCode)
+        sCode[1].addEventListener('click', getCode)
+        var yz_code = ''    
+        function getCode() {
+            var num = 59;
+            var code = guessRandom(arr);
+            yz_code = code
+            this.parentNode.children[0].value = code
+            var sendCode = this             //内部方法想用外部方法的this创建全局变量赋值
+            var time1 = setInterval(function () {
+                sendCode.innerHTML = num
+                num--;
+                if (num == -1) {
+                    sendCode.innerHTML = '发送短信'
+                    clearInterval(time1);
+                }
+            }, 1000)
+        }
+        //  注册验证 
+        $(() => {  
+            var inp_x = $('.inp-x')[0]      //获取姓名
+            var inp_m = $('.inp-m')[0]      //获取密码
+            var inp_tel = $('.inp-tel')[0]
+            var inp_code = $('.inp')[1]
+            var prop = $('.prop')[0]
+            var prop_in = $('.prop-in')[0]    //获取提示信息
+            var yz_check = $('.yz-check')[0]    //获取复选框
+            btn[2].addEventListener('click', () => {
+                prop.style.display = 'block'
+                if (inp_x.value == '') {
+                    prop_in.innerHTML = '请输入您的姓名!'
+                }
+                else if (inp_tel.value == '') {
+                    prop_in.innerHTML = '请输入手机号码!'
+                }
+                else if (inp_tel.value.length != 11 || isNaN(Number(inp_tel.value))) {
+                    prop_in.innerHTML = '请输入有效的手机号!'
+                }
+                else if (inp_m.value == '') {
+                    prop_in.innerHTML = '请输入您的密码!'
+                }
+                else if (inp_m.value.length < 6 || !isNaN(Number(inp_m.value))) {
+                    prop_in.innerHTML = '密码需大于6位且含有英文字母和数字!'
+                }
+                else if (inp_code.value != yz_code || inp_code.value == '') {
+                    prop_in.innerHTML = '验证码错误!'
+                }
+                else if(!yz_check.checked){
+                    prop_in.innerHTML = '请同意服务协议和条款!'
+                }
+                else {
+                    prop.style.display = 'none'
+                    localStorage.setItem('name',inp_x.value)
+                    localStorage.setItem('tel',inp_tel.value)
+                    localStorage.setItem('password',inp_m.value)
+                    alert('注册成功!')       
+                    $('.create-login')[0].click();
+                }
+            })
+            // 设置密码眼睛
+            $('.fa-eye')[0].style.display = 'none'
+            $('.fa-eye-slash')[0].onmousedown = function () {
+                inp_m.type = 'text'
+                $('.fa-eye-slash')[0].style.display = 'none'
+                $('.fa-eye')[0].style.display = 'block'
+            }
+            $('.fa-eye')[0].onmouseup = function () {
+                inp_m.type = 'password'
+                $('.fa-eye')[0].style.display = 'none'
+                $('.fa-eye-slash')[0].style.display = 'block'
+            }
+        })
+        // 密码登录
+        var loginTel = $('.login-tel')[0]
+        var loginPas =  $('.login-pas')[0]
+        btn[1].addEventListener('click',()=>{
+            if(loginTel.value == localStorage.getItem('tel') && loginPas.value == localStorage.getItem('password')){
+                localStorage.setItem('flag','1')
+                location.href = 'http://127.0.0.1:5500/PC/index.html'
+            }
+            else{
+                alert('密码输入错误!')
+            }
+        })
+        btn[0].addEventListener('click',()=>{
+            if($('.kj-tel')[0].value == localStorage.getItem('tel') && inp[0].value == yz_code){
+                localStorage.setItem('flag','1')
+                location.href = 'http://127.0.0.1:5500/PC/index.html'
+            }
+            else{
+                alert('输入错误!')
+            }
+        })
+    </script>
+    <!-- 手机电脑适配 -->
+    <script>
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "http://127.0.0.1:5500/mobile/index.html";     //手机
+            console.log('手机浏览器');
+        } else {
+            // window.location.href = "http://127.0.0.1:5500/PC/index.html";     //电脑
+            console.log('pc浏览器');
+        }
+        // PC端引入不能location同理移动也是
+    </script>
+</body>
+
+</html>

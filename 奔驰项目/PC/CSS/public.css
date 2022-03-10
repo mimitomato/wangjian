@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* 客户服务 */
+.khfw{
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    animation: slideUp 0.4s linear 0.1s 1 both;
+}
+/* 了解更多 */
+.learn-more{
+    position: absolute;
+    bottom: 40%;
+    left: 18%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 146px;
+    height: 40px;
+}
+.learn-more a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border: solid 1px #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+}

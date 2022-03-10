@@ -1,0 +1,319 @@
+.app{
+    width: 100%;
+    height: 100%;
+    padding-top: 66px;
+    background: url(../images/login-img/login-bg.jpg) no-repeat center center/ 100% 100%;
+    .login{
+        margin: 0 auto;
+        width: 590px;
+        min-height: 571px;
+        background: #fff;
+        padding: 40px 65px 0 65px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-shadow: 0 0 5px #e6e8e9;
+        box-shadow: 0 0 5px #e6e8e9;
+        position: relative;
+        // 顶部Mercedes图片
+        .login-img{
+            position: relative;
+            height: 32px;
+            line-height: 32px;
+            margin: 14px 0 42px 0;
+            img:first-child{
+                position: absolute;
+                width: 50%;
+                vertical-align: middle;
+                left: 0;right: 0;bottom: 0;top: 0;
+                margin: 0 auto;
+            }
+            img:last-child{
+                position: absolute;
+                width: 5%;
+                right: 20%;top: -20%;
+            }
+        }
+        // 标题选择手机密码登录
+        .login-title{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 29.2px;
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            .select-tel{
+                position: relative;
+                width: 50%;
+                padding-bottom: 3.82%;
+                border-bottom: 1px solid #00adef;
+                color: #00adef;
+                cursor: pointer;
+            }
+            i{
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                bottom: -14px;
+                border-top: 7px solid #00b7ff;
+                border-right: 7px solid transparent;
+                border-bottom: 7px solid transparent;
+                border-left: 7px solid transparent;
+            }
+            .triangular2{
+                display: none;
+            }
+            .select-password{
+                position: relative;
+                width: 50%;
+                padding-bottom: 3.82%;
+                cursor: pointer;
+            }
+        }
+        // 手机输入框
+        .infor-tel{
+            width: 100%;
+            margin-top: .7rem;
+            .tel{
+                width: 100%;
+                padding-bottom: .3rem;
+                margin-bottom: .45rem;
+                border-bottom: .01rem solid #e1e1e1;
+                height: 0.718rem;
+                position: relative;
+            }
+            .code{
+                width: 100%;
+                padding-bottom: .3rem;
+                border-bottom: .01rem solid #e1e1e1;
+                height: 0.718rem;
+                position: relative;
+                .send-code,.find-password{
+                    position: absolute;
+                    right: 0;
+                    color: #00adef;
+                    font-size: .28rem;
+                }
+            }
+            input{
+                position: absolute;
+                width: 100%;
+                font-size: .28rem;
+                height: 0.4rem;
+                outline: none;
+                border: 0;
+            }
+            button{
+               width: 100%; 
+               height: .8rem;
+                line-height: .8rem;
+                font-size: .26rem;
+                margin: .19rem 0;
+                background: #00adef;
+                color: #fff;
+                border: 0;
+            }
+        }
+        // 密码输入框
+        .infor-password{
+            display: none;
+        }
+        
+        // 创建id
+        .register{
+            color: #00adef;
+            height: .5rem;
+            font-size: .28rem;
+            margin-top: .3rem;
+            text-align: center;
+            cursor: pointer;
+        }
+        // QQ WX
+        .login-footer{
+            width: 100%;
+            margin-top: 1rem;
+            margin-bottom: 1.28rem;
+            font-size: .28rem;
+            text-align: center;
+            color: #666;
+            img{
+                width: 0.6rem;
+                cursor: pointer;
+            }
+            img:nth-child(2){
+                margin: 0 .82rem;
+            }
+        }
+    }
+    // 注册页面
+    .create-id{
+        position: absolute;
+        margin: 0 auto;
+        width: 590px;
+        min-height: 571px;
+        background: #fff;
+        padding: 40px 65px 0 65px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-shadow: 0 0 5px #e6e8e9;
+        box-shadow: 0 0 5px #e6e8e9;
+        position: relative;
+        display: none;
+        .login-img{
+            img:first-child{
+                width: 5.22rem;
+                height: .66rem;
+            }
+            img:last-child{
+                right: 20px;
+            }
+        }
+        .reading{
+            width: 100%;
+            height: 20px;
+            font-size: 16px;
+            margin-top: .21rem;
+            color: #666;
+            input{
+                float: left;
+                position: static;
+                width: .3rem;
+                height: .3rem;
+                border: .01rem solid #ccc;
+                margin-right: .24rem;
+                vertical-align: middle;
+                outline: none;
+                opacity: .5;
+                margin-top: 2px;
+            }
+            span{     
+                float: left;
+                i{
+                    color: #00adef;
+                    margin: 0 .24rem;
+                    font-style: normal;
+                }
+            }
+
+        }
+
+    }
+
+}
+::placeholder{
+    color: #aaaaaa;
+}
+
+// 尾部
+.footer{
+    position: relative;
+    width: 100%;
+    // height: 300px !important;
+    background-color: #000;
+    font-size: 12px;
+    overflow: hidden;
+    .footer{
+        height: 106px;
+        width: 100%;
+        padding: 10px 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer-links{
+            width: 50%;
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                li{
+                    color: #bfbfbf;
+                    font-size: 12px;
+                    line-height: 40px;
+                }
+                .shu{
+                    margin: 0 10px;
+                    width: 1px;
+                    height: 12px;
+                    background-color: #666;
+                }
+                span{
+                    cursor: pointer;
+                }
+            }
+        }
+        .footer-social{
+            width: 40%;
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                li{
+                    padding: 0 25px;
+                    color: #bfbfbf;
+                    font-size: 12px;
+                    display: flex;
+                    line-height: 40px;
+                    .img-wrap{
+                        height: 100%;              
+                    }
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        vertical-align: middle;
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                    span{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// 注册验证
+.prop{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: red;
+    font-size: 18px;
+    top: 110px;
+    padding-left: 35%;
+}
+.prop-in::before{
+    content: '!';
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+.inp-m{
+    position: relative;
+}
+.eyes{
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+    color: rgb(121, 78, 78);
+    cursor: pointer;
+}

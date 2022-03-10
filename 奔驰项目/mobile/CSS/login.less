@@ -1,0 +1,189 @@
+.app{
+    width: 100%;
+    height: 100%;
+    .login{
+        padding: 18.5% 5.5% 0 5.5%;
+        height: 100%;
+        position: relative;
+        // 顶部Mercedes图片
+        .login-img{
+            position: relative;
+            height: 7.5%;
+            padding-left: 3.3%;
+            img:first-child{
+                position: absolute;
+                width: 50%;
+                vertical-align: middle;
+                left: 0;right: 0;bottom: 0;top: 0;
+                margin: 0 auto;
+            }
+            img:last-child{
+                position: absolute;
+                width: 5%;
+                right: 20%;top: -20%;
+            }
+        }
+        // 标题选择手机密码登录
+        .login-title{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 29.2px;
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            .select-tel{
+                position: relative;
+                width: 50%;
+                padding-bottom: 3.82%;
+                border-bottom: 1px solid #00adef;
+                color: #00adef;
+            }
+            i{
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                bottom: -14px;
+                border-top: 7px solid #00b7ff;
+                border-right: 7px solid transparent;
+                border-bottom: 7px solid transparent;
+                border-left: 7px solid transparent;
+            }
+            .triangular2{
+                display: none;
+            }
+            .select-password{
+                position: relative;
+                width: 50%;
+                padding-bottom: 3.82%;
+            }
+        }
+        // 手机输入框
+        .infor-tel{
+            width: 100%;
+            margin-top: .7rem;
+            .tel{
+                width: 100%;
+                padding-bottom: .3rem;
+                margin-bottom: .45rem;
+                border-bottom: .01rem solid #e1e1e1;
+                height: 0.718rem;
+                position: relative;
+            }
+            .code{
+                width: 100%;
+                padding-bottom: .3rem;
+                border-bottom: .01rem solid #e1e1e1;
+                height: 0.718rem;
+                position: relative;
+                .send-code{
+                    position: absolute;
+                    right: 0;
+                    color: #00adef;
+                    font-size: .28rem;
+                }
+            }
+            input{
+                position: absolute;
+                width: 100%;
+                font-size: .28rem;
+                height: 0.4rem;
+                outline: none;
+                border: 0;
+            }
+            button{
+               width: 100%; 
+               height: .8rem;
+                line-height: .8rem;
+                font-size: .26rem;
+                margin: .19rem 0;
+                background: #00adef;
+                color: #fff;
+                border: 0;
+            }
+        }
+        // 密码输入框
+        .infor-password{
+            display: none;
+        }
+        
+        // 创建id
+        .register{
+            color: #00adef;
+            height: .5rem;
+            font-size: .28rem;
+            margin-top: .3rem;
+            text-align: center;
+        }
+        // QQ WX
+        .login-footer{
+            width: 100%;
+            margin-top: 1rem;
+            margin-bottom: 1.28rem;
+            font-size: .28rem;
+            text-align: center;
+            color: #666;
+            img{
+                width: 0.6rem;
+            }
+            img:first-child{
+                margin-right: .82rem;
+            }
+        }
+    }
+    // 注册页面
+    .create-id{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        .login-img{
+            img:first-child{
+                width: 5.22rem;
+                height: .66rem;
+            }
+            img:last-child{
+                right: 20px;
+            }
+        }
+        .reading{
+            width: 100%;
+            height: 20px;
+            font-size: 16px;
+            margin-top: .21rem;
+            color: #666;
+            input{
+                float: left;
+                position: static;
+                width: .3rem;
+                height: .3rem;
+                border: .01rem solid #ccc;
+                margin-right: .24rem;
+                vertical-align: middle;
+                outline: none;
+                opacity: .5;
+                margin-top: 2px;
+            }
+            span{     
+                float: left;
+                i{
+                    color: #00adef;
+                    margin: 0 .24rem;
+                    font-style: normal;
+                }
+            }
+
+        }
+
+    }
+
+}
+::placeholder{
+    color: #aaaaaa;
+}
